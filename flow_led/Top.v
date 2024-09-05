@@ -8,7 +8,7 @@ module Top (
 );
     wire valid;
 
-    Counter counter_inst0 (.clk(clk), .rst_n(rstn), .valid(valid));
+    counter counter_inst0 (.clk(clk), .rst_n(rstn), .valid(valid));
 
     led_driver driver_inst0 (.clk(clk), .rst_n(rstn), .valid(valid), .led(led));
 
